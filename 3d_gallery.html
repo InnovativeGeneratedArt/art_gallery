@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AR Art Gallery</title>
+    <!-- Include AR library -->
+    <script src="https://cdn.jsdelivr.net/npm/aframe@1/dist/aframe.min.js"></script>
+  </head>
+  <body>
+    <!-- Create AR scene -->
+    <a-scene>
+      <!-- Set up camera -->
+      <a-entity camera></a-entity>
+
+      <!-- Load 3D art assets -->
+      <a-asset-item id="art1" src="./img/color_full/image2.glb"></a-asset-item>
+
+      <!-- Display art gallery -->
+      <a-entity id="art-gallery" gltf-model="#art1" position="0 0 0"></a-entity>
+    </a-scene>
+  </body>
+</html>

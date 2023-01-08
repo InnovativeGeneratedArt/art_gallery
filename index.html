@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Art Gallery</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aframe@1/dist/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/smooth-scroll@14/dist/smooth-scroll.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/OrbitControls.js"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="navbar-header">
+        <a href="#" class="navbar-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+        <a href="#" class="logo">Art Gallery</a>
+      </div>
+      <div class="navbar-collapse">
+        <ul class="navbar-nav">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Home -->
+    <section id="home">
+      <div class="container">
+        <h1>Welcome to the Art Gallery</h1>
+        <p>
+          Explore our collection of computer-generated art, created using
+          recursive, trig functions, and circle functions.
+        </p>
+        <a href="#gallery" class="button">View Gallery</a>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery">
+      <div class="container">
+        <div id="3d-gallery">
+          <div class="thumbnail" data-index="0">
+            <img src="./img/image1.png" alt="Artwork 1" />
+          </div>
+          <div class="thumbnail" data-index="1">
+            <img src="./img/image2.png" alt="Artwork 2" />
+          </div>
+          <!-- Other thumbnail elements -->
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <div class="container">
+        <h2>About Our Art</h2>
+        <p>
+          Our art is computer-generated using recursive, trig functions, and
+          circle functions, and can be viewed in RGB or HSV color mode. The
+          sizes of the artwork can be customized, and frames can also be added
+          to complete the look.
+        </p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-flickr"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <script src="js/index.js"></script>
+  </body>
+  <footer>
+    <div class="container">
+      <p>Copyright &copy; 2021 Art Gallery</p>
+    </div>
+  </footer>
+</html>
